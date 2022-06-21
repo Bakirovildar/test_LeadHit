@@ -14,6 +14,7 @@ import am5theme_Animated from "@amcharts/amcharts5/themes/Animated";
 
 export default {
   name: 'AnalyticsComponent',
+  title: 'Аналитика',
   mounted() {
     this.updateData
     this.renderChart(this.data);

@@ -32,7 +32,6 @@ const testData = [
 
 class DataService {
     getData() {
-        console.log('fetching test data...')
         return testData
     }
 }

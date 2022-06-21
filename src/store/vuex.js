@@ -10,7 +10,6 @@ export default createStore({
     },
     mutations:{
         setSiteId(state, id) {
-            console.log(id);
             state.siteId = id
         },
         updateData(state) {

@@ -19,6 +19,7 @@ export default {
       invalid: false
     }
   },
+  title: 'Авторизация',
   watch: {
     siteId(newValue) {
       if (newValue) {
