@@ -27,7 +27,6 @@ export default {
         .then(() => {
           this.$store.commit('setSiteId', this.siteId)
           this.$router.push('/')
-          console.log(this.$router);
         })
     }
   }

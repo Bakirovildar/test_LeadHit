@@ -10,9 +10,8 @@ let router = createRouter({
     ]
 })
 
-const isAuthenticated = localStorage.getItem('leadhit-site-id')
-
 router.beforeEach((to, from, next) => {
+    const isAuthenticated = localStorage.getItem('leadhit-site-id')
     if (to.name !== 'Auth' && !isAuthenticated) next({name: 'Auth'})
     else next()
 })
