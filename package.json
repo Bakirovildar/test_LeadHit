@@ -2,15 +2,19 @@
   "name": "test_lead_hit",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bakirovildar.github.io/test_lead_hit/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.25",
     "@amcharts/amcharts5": "^5.2.9",
     "core-js": "^3.8.3",
+    "gh-pages": "^4.0.0",
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
     "vue-router": "^4.0.16",
